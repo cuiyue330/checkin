@@ -81,11 +81,3 @@ if __name__ == "__main__":
             func()
         except Exception as e:
             errors.append(e)
-
-    if errors:
-        print("============ errors ============")
-    for er in errors:
-        try:
-            raise er
-        except Exception:
-            print(f"--------------------------\n\n{format_exc()}")
